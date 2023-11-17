@@ -5,10 +5,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/*print functions*/
-void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
-
 /*doubly linked list - definition*/
 /**
  * struct listint_s - Doubly linked list node
@@ -23,5 +19,12 @@ typedef struct listint_s
 	struct listint_s *prev;
 	struct listint_s *next;
 } listint_t;
+
+/*Common: print functions*/
+void print_array(const int *array, size_t size);
+void print_list(const listint_t *list);
+
+/*Function prototypes*/
+void bubble_sort(int *array, size_t size);
 
 #endif /*SORT_H*/
